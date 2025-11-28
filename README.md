@@ -1,12 +1,12 @@
 # Grand Chat Tutorial
 
-A full-stack real-time chat application built with Django, WebSocket, and a modern frontend (React/TypeScript or similar). This project serves as a boilerplate and educational template for building real-time messaging systems.
+A full-stack real-time chat application built with Django, WebSocket, and a modern frontend. This project serves as a boilerplate and educational template for building real-time messaging systems.
 
 ## 📁 Project Structure
 
 - `/app/` — Django backend application  
 - `/chat/` — WebSocket logic (rooms, connections, messaging)  
-- `/frontend/` — Frontend app (React, TypeScript, or your stack)  
+- `/frontend/` — Frontend app   
 - `/nginx/` — Nginx configuration files (optional)  
 - `Dockerfile` — Backend Docker build instructions  
 - `docker-compose.yml` — Multi-container app orchestration  
@@ -34,15 +34,15 @@ Scalable architecture with room for extension
 
 Optional Nginx configuration for production
 
-Authentication-ready (customize as needed)
+Authentication-ready 
 
 ## 🛠 Technologies Used
 
 Backend: Django, ASGI, WebSockets
 
-Frontend: React, TypeScript (or any SPA framework)
+Frontend: React, TypeScript 
 
-Database: PostgreSQL (configurable)
+Database: PostgreSQL 
 
 DevOps: Docker, Docker Compose, Nginx
 

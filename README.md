@@ -1,58 +1,71 @@
 # Grand Chat Tutorial
 
-A full-stack real-time chat application built with Django, WebSocket, and a frontend (React/TypeScript or similar). Designed as a learning project and boilerplate for chat systems.
+A full-stack real-time chat application built with Django, WebSocket, and a modern frontend (React/TypeScript or similar). This project serves as a boilerplate and educational template for building real-time messaging systems.
 
 ## 📁 Project Structure
 
-/
-├── app/ # Django backend application
-├── chat/ # WebSocket/chat logic
-├── frontend/ # Frontend app (React, TypeScript, etc.)
-├── nginx/ # Nginx config (optional)
-├── Dockerfile
-├── docker-compose.yml
-├── pyproject.toml / poetry.lock # Python dependencies
-└── manage.py
-
+- `/app/` — Django backend application  
+- `/chat/` — WebSocket logic (rooms, connections, messaging)  
+- `/frontend/` — Frontend app (React, TypeScript, or your stack)  
+- `/nginx/` — Nginx configuration files (optional)  
+- `Dockerfile` — Backend Docker build instructions  
+- `docker-compose.yml` — Multi-container app orchestration  
+- `pyproject.toml`, `poetry.lock` — Python dependencies via Poetry  
+- `manage.py` — Django project entry point  
 
 ## 🚀 Quick Start (with Docker)
 
-1. Make sure you have Docker and Docker Compose installed.
-2. Clone the repo and run:
+1. Make sure Docker and Docker Compose are installed.
+2. Clone this repository:
 
    ```bash
-   docker compose up
+   git clone https://github.com/Volodymyr-tech/grand-chat-tutorial.git
+   cd grand-chat-tutorial
 
 ## ✨ Features
 
--Real-time chat using WebSocket
--Dockerized environment for easy development
--Full separation of backend and frontend
--Authentication (basic setup, extendable)
--Scalable architecture
+Real-time messaging with WebSocket support
 
-## 🛠 Technologies
+Clean separation of frontend and backend logic
 
--Backend: Django, WebSocket
--Frontend: React / TypeScript (or your preferred stack)
--DevOps: Docker, Docker Compose, Nginx (optional)
--Database: PostgreSQL (configurable)
+Dockerized environment for consistent development
 
-## 🧩 How to Extend
+Scalable architecture with room for extension
 
--Add authentication (login, register)
--Store messages in a database
--Create private/group chat rooms
--Add typing indicators, seen/read status
--Improve frontend UI/UX
--Connect to LLMs (for chatbots or agents)
+Optional Nginx configuration for production
+
+Authentication-ready (customize as needed)
+
+## 🛠 Technologies Used
+
+Backend: Django, ASGI, WebSockets
+
+Frontend: React, TypeScript (or any SPA framework)
+
+Database: PostgreSQL (configurable)
+
+DevOps: Docker, Docker Compose, Nginx
+
+## 🧱 How to Extend the Project
+
+Add login/registration system
+
+Store chat history in a database
+
+Support private and group chats
+
+Add features like typing indicators and read receipts
+
+Improve mobile responsiveness and UI/UX
+
+Integrate AI agents (e.g. GPT bots via LangChain)
 
 ## 📌 Use Cases
 
--Educational project to understand WebSocket integration
--Boilerplate for building chat-based SaaS
--Starter for real-time messaging apps
+Educational sandbox for real-time app development
 
-## 📄 License
+Boilerplate for SaaS chat systems
 
-MIT License — feel free to use, modify, and share.
+Template for building a scalable messaging backend
+
+Playground for integrating AI into real-time communication
